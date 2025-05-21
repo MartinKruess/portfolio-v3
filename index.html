@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/ddedb004f6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="main_style.css" />
+    <link rel="stylesheet" href="./styles/dark-light.css" />
+    <link rel="stylesheet" href="./styles/navToggle.css" />
+    <script src="index.js" defer></script>
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <nav>
+      <label class="dlToggle">
+        <input type="checkbox" name="dlToggle" />
+      </label>
+      <label class="navToggle">
+        <input type="checkbox" name="navToggle" />
+      </label>
+      <a href="">Home</a>
+      <a href="">About</a>
+      <a href="">Contact</a>
+    </nav>
+    <section class="topSpacer"></section>
+    <main>
+      <section id="about">
+        <h2>About</h2>
+        <img src="./images/martin.webp" alt="" />
+        <article>
+          <p>Position</p>
+          <p>Junior Teacher</p>
+          <p>Beschreibung</p>
+          <p>
+            Fullstack Webdeveloper
+            <a
+              href="https://www.mongodb.com/resources/languages/mern-stack"
+              target="_blank"
+              rel="noopener noreferrer"
+              >(MERN)</a
+            >
+          </p>
+          <p>Lebenslauf</p>
+          <a href="/pdf/CV_Krüss.pdf" target="_blank" rel="download cv"
+            >Lebenslauf herunterladen</a
+          >
+        </article>
+        <p></p>
+        <p>
+          Hi, mein Name ist Martin, ich bin
+          <span class="ageContainer"></span> Jahre alt und ein
+          leidenschaftlicher Webentwickler. Derzeit arbeite ich als Junior
+          Teacher am Digital Career Institute in Hamburg. In meiner Rolle bringe
+          ich meinen Studenten die Grundlagen der Fullstack-Webentwicklung bei,
+          insbesondere im MERN-Stack mit Javascript und TypeScript. Diese
+          Tätigkeit hat mir nicht nur technisches Wissen vermittelt, sondern
+          auch meine Fähigkeit gestärkt, komplexe Themen verständlich und
+          präzise zu vermitteln.
+        </p>
+        <p>
+          Meine Erfahrung als Lehrer hat mir gezeigt, wie wichtig klare
+          Kommunikation ist, insbesondere wenn es darum geht, technische Inhalte
+          zu vermitteln. Diese Fähigkeit bringe ich auch in meinen Projekten als
+          Entwickler mit ein.
+        </p>
+        <p>
+          Neben meiner Lehrtätigkeit beschäftige ich mich auch privat mit der
+          Erweiterung meiner Fähigkeiten. Für mich ist das Coden nicht nur ein
+          Beruf, sondern eine Leidenschaft. Kreative Lösungen für verschiedene
+          Projekte zu finden und dabei stets neue Techniken und Ansätze zu
+          entdecken, fasiziert mich.
+        </p>
+        <p>
+          Privat beschäftige ich mich gerade mit der Unreal Engine in Verbindung
+          mit einem NodeJS Backend. Die Kommunikation über WebSockets aktuell
+          noch via JSON, später dann binär via UDP.
+        </p>
+      </section>
+      <section id="skills">
+        <h2>Skills</h2>
+      </section>
+      <section id="projects">
+        <h2>Projects</h2>
+      </section>
+      <section id="contact">
+        <h2>Contact</h2>
+        <form action="">
+          <fieldset>
+            <legend>Anfragen/Kontakt</legend>
+            <label for="mail">E-Mail</label>
+            <input type="email" id="mail" placeholder="my_email@company.com" />
+            <label for="nm">Firmenname/Nachname</label>
+            <input type="text" id="nm" placeholder="MyBestCompany" />
+            <label for="btr">Betreff</label>
+            <input
+              type="text"
+              id="btr"
+              placeholder="Wir wollen Ihnen Geld überweisen!"
+            />
+            <label for="msg">Nachricht</label>
+            <textarea
+              name=""
+              id="msg"
+              placeholder="Wir wissen nicht wohin mit unserem geld =("
+            ></textarea>
+            <button>Anfrage senden</button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

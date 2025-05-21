@@ -1,0 +1,35 @@
+nav:has(:not(input[name="navToggle"]:checked)) {
+  a {
+    color: var(--fontDark);
+    font-family: monospace, sans-serif;
+    font-size: 2.2rem;
+    text-decoration: none;
+    letter-spacing: 0.1rem;
+    font-variant: small-caps;
+  }
+}
+
+nav:has(input[name="navToggle"]:checked) {
+  width: 80%;
+  padding: 1.5rem;
+  box-shadow: 0rem 0rem 0.5rem 0.2rem #2c57b4,
+    inset 0.1rem 0rem 0.7rem -1rem #2c57b4;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+nav:has(:not(input[name="navToggle"]:checked)) > .navToggle::before {
+  /* color: #ededed; */
+  content: "\f141";
+  font-family: "Font Awesome 6 Free";
+  font-size: 2rem;
+  font-weight: 900;
+  position: fixed;
+  top: 0.3rem;
+  right: 1rem;
+}
+
+nav:has(input[name="navToggle"]:checked) > .navToggle::before {
+  /* color: #242628; */
+  content: "\f142";
+}

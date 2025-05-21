@@ -1,0 +1,31 @@
+/* ICONS */
+body:has(:not(input[name="dlToggle"]:checked)) > nav .dlToggle::before {
+  color: var(--fontDark);
+  content: "\f185";
+  font-family: "Font Awesome 6 Free";
+  font-size: 1rem;
+  font-weight: 900;
+  position: fixed;
+  top: 0.8rem;
+  right: 3.5rem;
+}
+
+body:has(input[name="dlToggle"]:checked) > nav .dlToggle::before {
+  color: var(--fontLight);
+  content: "\f186";
+}
+
+/* CHANGE EVERYTHING */
+
+body:has(input[name="dlToggle"]:checked) {
+  background: var(--bodyLight);
+  color: var(--fontLight);
+
+  nav {
+    background: var(--overlaysLight);
+    color: var(--fontLight);
+    a {
+      color: var(--fontLight);
+    }
+  }
+}
