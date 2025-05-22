@@ -31,7 +31,7 @@ export const basic = [
   },
   {
     title: "Styled Components",
-    image: "/images/techstack/styled-components.svg",
+    image: "./images/techstack/styled-components.svg",
     alt: "StyledComponents Logo",
   },
 ];
@@ -39,7 +39,7 @@ export const basic = [
 export const adds = [
   {
     title: "Markdown",
-    image: "/images/techstack/markdown-original.svg",
+    image: "./images/techstack/markdown-original.svg",
     alt: "Markdown Logo",
   },
   {
@@ -61,12 +61,12 @@ export const adds = [
   },
   {
     title: "Powershell",
-    image: "/images/techstack/powershell-original.svg",
+    image: "./images/techstack/powershell-original.svg",
     alt: "Powershell Logo",
   },
   {
     title: "Bash",
-    image: "/images/techstack/bash-original.svg",
+    image: "./images/techstack/bash-original.svg",
     alt: "Bash Logo",
   },
   {
@@ -135,7 +135,7 @@ export const backend = [
   },
   {
     title: "Python",
-    image: "/images/techstack/python-original.svg",
+    image: "./images/techstack/python-original.svg",
     alt: "Python Logo",
   },
 ];
@@ -202,7 +202,7 @@ export const tools = [
   },
   {
     title: "After Effects",
-    image: "/images/techstack/aftereffects-original.svg",
+    image: "./images/techstack/aftereffects-original.svg",
     alt: "After Effects Logo",
   },
   {
