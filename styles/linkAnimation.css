@@ -1,0 +1,131 @@
+#about a {
+  background: rgb(239, 202, 14);
+  color: var(--overlaysLight);
+  text-decoration: none;
+  padding: 0.7rem 1.3rem;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  transition: all 0.3s ease-out;
+}
+
+#about a span::before,
+#about a span::after,
+#about a::before,
+#about a::after {
+  background: transparent;
+  content: "";
+  width: 0.4rem;
+  height: 0.4rem;
+  position: absolute;
+  transition: all 0.3s;
+  opacity: 0;
+}
+
+#about a span::before {
+  left: 0;
+  top: 0;
+  border-top: 2px solid var(--overlaysLight);
+  border-left: 2px solid var(--overlaysLight);
+}
+
+#about a span::after {
+  right: 0;
+  bottom: 0;
+  border-right: 2px solid var(--overlaysLight);
+  border-bottom: 2px solid var(--overlaysLight);
+}
+
+#about a::before {
+  right: 0;
+  top: 0;
+  border-right: 2px solid var(--overlaysLight);
+  border-top: 2px solid var(--overlaysLight);
+}
+
+#about a::after {
+  left: 0;
+  bottom: 0;
+  border-left: 2px solid var(--overlaysLight);
+  border-bottom: 2px solid var(--overlaysLight);
+}
+
+#about a:hover {
+  color: var(--overlaysLight);
+}
+
+#about a span:hover::before,
+#about a span:hover::after,
+#about a:hover::before,
+#about a:hover::after {
+  opacity: 1;
+}
+
+#about a:hover::before {
+  right: 5px;
+  top: 5px;
+}
+
+#about a:hover::after {
+  left: 5px;
+  bottom: 5px;
+}
+
+#about a:hover span::before {
+  left: 5px;
+  top: 5px;
+}
+
+#about a:hover span::after {
+  right: 5px;
+  bottom: 5px;
+}
+
+/* .svgwoosh {
+  .woosh {
+    cursor: pointer;
+    display: block;
+    font-weight: 400;
+    line-height: 45px;
+    max-width: 160px;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: middle;
+    width: 100%;
+    background: #fff;
+    font-weight: 100;
+    color: #666;
+    @include transition(0.3s ease-in-out all);
+
+    svg {
+      height: 45px;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+
+    rect {
+      fill: none;
+      stroke: #666;
+      stroke-width: 4;
+      stroke-dasharray: 422, 0;
+      @include transition(all 1.35s cubic-bezier(0.19, 1, 0.22, 1));
+    }
+
+    &:hover {
+      background: rgba($brand-primary, 0);
+      letter-spacing: 1px;
+      color: $brand-primary;
+
+      rect {
+        stroke-width: 5;
+        stroke: $brand-primary;
+        stroke-dasharray: 15, 310;
+        stroke-dashoffset: 48;
+      }
+    }
+  }
+} */
