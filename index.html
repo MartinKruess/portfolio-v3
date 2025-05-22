@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="main_style.css" />
     <link rel="stylesheet" href="./styles/dark-light.css" />
     <link rel="stylesheet" href="./styles/navToggle.css" />
-    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="./styles/skillCube.css" />
+
+    <script src="index.js" type="module" defer></script>
     <title>Portfolio</title>
   </head>
   <body>
@@ -27,9 +29,25 @@
     </nav>
     <section class="topSpacer"></section>
     <main>
+      <section class="cube-container">
+        <div class="cube">
+          <div class="face front">Willkommen!</div>
+          <div class="face back">
+            <img src="./images/me2.png" alt="" />
+          </div>
+          <div class="face right">
+            <img src="./images/gh_profile.png" alt="" />
+          </div>
+          <div class="face left">
+            <img src="./images/martin.webp" alt="" />
+          </div>
+          <div class="face top"></div>
+          <div class="face bottom"></div>
+        </div>
+      </section>
       <section id="about">
         <h2>About</h2>
-        <img src="./images/martin.webp" alt="" />
+        <!-- <img src="./images/martin.webp" alt="" /> -->
         <article>
           <p>Position</p>
           <p>Junior Teacher</p>
@@ -81,6 +99,17 @@
       </section>
       <section id="skills">
         <h2>Skills</h2>
+        <h3>Basic Skills</h3>
+        <article class="basicArticle"></article>
+        <article class="addsArticle"></article>
+        <h3>Frontend</h3>
+        <article class="frontendArticle"></article>
+        <h3>Backend</h3>
+        <article class="backendArticle"></article>
+        <article class="bonusArticle"></article>
+        <article class="dbArticle"></article>
+        <h3>Tools & more</h3>
+        <article class="toolArticle"></article>
       </section>
       <section id="projects">
         <h2>Projects</h2>

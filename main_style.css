@@ -1,6 +1,6 @@
 :root {
   /* Dark */
-  --overlaysDark: #282f3f;
+  --overlaysDark: #292f3d;
   --fontDark: #ededed;
   --bodyDark: #26292f;
 
@@ -64,16 +64,29 @@ section {
 
 /* About */
 
-#about img {
-  width: 50%;
-  display: block;
-  margin: 0.75rem auto;
-}
-
 #about article {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 0.3rem;
+}
+
+/*  Skills */
+
+#skills {
+  h3 {
+    margin: 1rem 0 0.5rem 0;
+  }
+
+  article {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1rem;
+    padding: 0 0 1rem;
+
+    img {
+      height: 2.5rem;
+    }
+  }
 }
 
 /* Contact */
