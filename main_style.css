@@ -46,6 +46,10 @@ nav {
   transition: width 0.3s;
   box-shadow: none;
   z-index: 2;
+
+  input {
+    display: none;
+  }
 }
 
 main {
