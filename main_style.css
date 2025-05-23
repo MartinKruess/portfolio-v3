@@ -102,6 +102,19 @@ section {
   }
 }
 
+/* Projects */
+
+#projects {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-items: center;
+  gap: 1rem;
+
+  h2 {
+    justify-self: left;
+  }
+}
+
 /* Contact */
 
 fieldset {
@@ -158,12 +171,53 @@ fieldset {
     outline: 0.2rem solid var(--overlaysLight);
   }
 
+  /* From Uiverse.io by Navarog21 */
   button {
-    background-color: #ccc;
-    box-shadow: inset 0.1rem 0.1rem 0.3rem #ededed, 0.1rem 0.1rem 0.3rem #161a1f;
+    width: 10em;
+    position: relative;
+    height: 3em;
+    border: 3px ridge var(--overlaysLight);
+    outline: none;
+    background-color: transparent;
+    color: var(--fontDark);
+    margin: auto;
+    transition: 1s;
+    border-radius: 0.3em;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
   }
 
-  button:active {
-    box-shadow: inset 0.1rem 0.1rem 0.3rem #161a1f, 0.1rem 0.1rem 0.3rem #ededed;
+  button::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+    background-color: #1c1f21;
+    transition: 0.5s;
+    transform-origin: center;
+  }
+
+  button::before {
+    content: "";
+    transform-origin: center;
+    position: absolute;
+    top: 80%;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+    background-color: #1c1f21;
+    transition: 0.5s;
+  }
+
+  button:hover::before,
+  button:hover::after {
+    transform: scale(0);
+  }
+
+  button:hover {
+    box-shadow: inset 0px 0px 25px var(--overlaysLight);
   }
 }

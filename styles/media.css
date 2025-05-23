@@ -47,6 +47,19 @@
         flex-direction: column;
       }
     }
+
+    #projects {
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: end;
+
+      :nth-child(odd) {
+        justify-self: start;
+      }
+
+      h2 {
+        grid-area: 1/1/2/3;
+      }
+    }
   }
 
   footer {
@@ -82,6 +95,52 @@
 
     section {
       grid-area: 4/2/5/3;
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  main {
+    #projects {
+      grid-template-columns: repeat(3, 1fr);
+
+      h2 {
+        grid-area: 1/1/2/4;
+      }
+
+      .card {
+        width: 100%;
+
+        .content {
+          width: 99%;
+        }
+      }
+      .card::after {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  main {
+    #projects {
+      grid-template-columns: repeat(4, 1fr);
+
+      h2 {
+        grid-area: 1/1/2/5;
+      }
+
+      .card {
+        width: 100%;
+
+        .content {
+          width: 99%;
+        }
+      }
+      .card::after {
+        width: 100%;
+      }
     }
   }
 }
