@@ -28,4 +28,40 @@ body:has(input[name="dlToggle"]:checked) {
       color: var(--fontLight);
     }
   }
+
+  .topSpacer {
+    background: var(--bodyLight);
+  }
+
+  #about a {
+    background: #ef820e;
+    color: var(--bodyLight);
+  }
+
+  .face {
+    box-shadow: 0.1rem 0.1rem 0.4rem 0.2rem var(--overlaysDark),
+      inset 0.1rem 0.1rem 0.4rem 0.2rem var(--overlaysDark);
+  }
+
+  fieldset {
+    background: var(--overlaysLight);
+    box-shadow: 0.1rem 0.1rem 0.4rem 0.2rem var(--overlaysDark),
+      inset 0.1rem 0.1rem 0.4rem 0.2rem var(--overlaysDark);
+
+    legend {
+      color: var(--fontDark);
+      text-shadow: 0.1rem 0.1rem 0.6rem var(--overlaysDark),
+        -0.1rem -0.1rem 0.6rem var(--overlaysDark);
+    }
+
+    input,
+    textarea {
+      border-bottom: var(--fontDark) solid;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      color: var(--overlaysDark);
+    }
+  }
 }
