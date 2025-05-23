@@ -7,6 +7,10 @@
   overflow: hidden;
   display: inline-block;
   transition: all 0.3s ease-out;
+
+  span {
+    display: block;
+  }
 }
 
 #about a span::before,
