@@ -1,0 +1,108 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.pythonCard,
+.jsCard,
+.reactCard {
+  background-color: #25241c;
+  width: 50%;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 1.5rem 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3rem;
+  gap: 1rem;
+
+  .App-logo {
+    pointer-events: none;
+    width: 3rem;
+  }
+
+  .App-button {
+    background-color: transparent;
+    padding: 0.5rem 1.2rem;
+    font-size: 0.7rem;
+    text-decoration: none;
+    border-radius: 5em;
+    transition: 0.2s;
+  }
+}
+
+.pythonCard {
+  border: 0.2rem solid #387eb8;
+  color: white;
+
+  .App-button {
+    color: #387eb8;
+    border: 0.2rem solid #387eb8;
+  }
+
+  .App-button:hover {
+    color: #191e24;
+    background-color: #ffe052;
+  }
+
+  .welcometo {
+    color: #387eb8;
+  }
+
+  .python {
+    color: #ffe052;
+  }
+}
+
+/* From Uiverse.io by aadium */
+.jsCard {
+  border: 0.2rem solid #f7df1e;
+  color: #f7df1e;
+
+  .App-button {
+    color: #f7df1e;
+    border: 0.2rem solid #f7df1e;
+  }
+
+  .App-button:hover {
+    color: #2e2d23;
+    background-color: #f7df1e;
+  }
+}
+
+/* From Uiverse.io by aadium */
+.reactCard {
+  border: 0.2rem solid #61dafb;
+  color: #61dafb;
+
+  .App-button {
+    color: #61dafb;
+    border: 0.2rem solid #61dafb;
+  }
+
+  .App-button:hover {
+    color: #1e2127;
+    background-color: #61dafb;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .reactCard .App-logo {
+    animation: spinner infinite 5s linear;
+  }
+}
+
+@keyframes spinner {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
