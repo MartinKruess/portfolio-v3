@@ -1,0 +1,87 @@
+@media (min-width: 600px) {
+  nav:has(input[name="navToggle"]:checked) {
+    width: 60%;
+  }
+
+  fieldset {
+    width: 20rem;
+  }
+
+  #skills article img {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
+@media (min-width: 768px) {
+  nav:has(input[name="navToggle"]:checked) {
+    width: 40%;
+  }
+
+  main {
+    #about {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-areas:
+        "header header header header"
+        "cube text text text"
+        "btn text text text"
+        "btn text text text";
+      gap: 1rem;
+
+      .aboutHeader {
+        grid-area: header;
+      }
+
+      .cube-container {
+        grid-area: cube;
+      }
+
+      .aboutText {
+        grid-area: text;
+      }
+
+      article {
+        grid-area: btn;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+
+    h2 {
+      grid-area: 1/1/2/4;
+    }
+
+    p {
+      grid-area: 2/1/3/4;
+    }
+
+    .pythonCard {
+      grid-area: 3/3/4/4;
+    }
+
+    .jsCard {
+      grid-area: 3/1/4/2;
+    }
+
+    .reactCard {
+      grid-area: 3/2/4/3;
+    }
+
+    .pythonCard,
+    .jsCard,
+    .reactCard {
+      width: auto;
+    }
+
+    section {
+      grid-area: 4/2/5/3;
+    }
+  }
+}

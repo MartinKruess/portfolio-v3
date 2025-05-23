@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./styles/cube.css" />
     <link rel="stylesheet" href="./styles/linkAnimation.css" />
     <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/media.css" />
     <script src="index.js" type="module" defer></script>
     <title>Portfolio</title>
   </head>
@@ -24,84 +25,83 @@
       <label class="navToggle">
         <input type="checkbox" name="navToggle" />
       </label>
-      <a href="">Home</a>
-      <a href="">About</a>
-      <a href="">Contact</a>
+      <a href="#about">Über mich</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projekte</a>
+      <a href="#contact">Kontakt</a>
+      <a href="#lvup">Level Up</a>
     </nav>
     <section class="topSpacer"></section>
     <main>
-      <section class="cube-container">
-        <div class="cube">
-          <div class="face front">Willkommen!</div>
-          <div class="face back">
-            <img src="./images/me2.png" alt="" />
-          </div>
-          <div class="face right">
-            <img src="./images/gh_profile.png" alt="" />
-          </div>
-          <div class="face left">
-            <img src="./images/martin.webp" alt="" />
-          </div>
-          <div class="face top"></div>
-          <div class="face bottom"></div>
-        </div>
-      </section>
       <section id="about">
-        <h2>About</h2>
-        <article>
-          <p>Position: Junior Teacher</p>
-          <p>Beschreibung: Fullstack Webdeveloper</p>
-          <div>
-            <a
-              href="https://www.mongodb.com/resources/languages/mern-stack"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><span>MERN-Stack</span></a
-            >
-            <a href="/pdf/CV_Krüss.pdf" target="_blank" rel="download cv"
-              ><span>Lebenslauf (<i class="fa-solid fa-download"></i>)</span>
-            </a>
-            <a href="https://github.com/MartinKruess/" target="_blank"
-              ><span>GitHub</span></a
-            >
-            <a
-              href="https://www.linkedin.com/in/martin-kr%C3%BCss-a5199621b/"
-              target="_blank"
-              ><span>LinkedIn</span></a
-            >
-            <a href="mailto:martinkr90@googlemail.com"><span>E-Mail</span></a>
+        <article class="cube-container">
+          <div class="cube">
+            <div class="face front">Willkommen!</div>
+            <div class="face back">
+              <img src="./images/me2.png" alt="" />
+            </div>
+            <div class="face right">
+              <img src="./images/gh_profile.png" alt="" />
+            </div>
+            <div class="face left">
+              <img src="./images/martin.webp" alt="" />
+            </div>
+            <div class="face top"></div>
+            <div class="face bottom"></div>
           </div>
         </article>
-        <p></p>
-        <p>
-          Hi, mein Name ist Martin, ich bin
-          <span class="ageContainer"></span> Jahre alt und ein
-          leidenschaftlicher Webentwickler. Derzeit arbeite ich als Junior
-          Teacher am Digital Career Institute in Hamburg. In meiner Rolle bringe
-          ich meinen Studenten die Grundlagen der Fullstack-Webentwicklung bei,
-          insbesondere im MERN-Stack mit Javascript und TypeScript. Diese
-          Tätigkeit hat mir nicht nur technisches Wissen vermittelt, sondern
-          auch meine Fähigkeit gestärkt, komplexe Themen verständlich und
-          präzise zu vermitteln.
-        </p>
-        <p>
-          Meine Erfahrung als Lehrer hat mir gezeigt, wie wichtig klare
-          Kommunikation ist, insbesondere wenn es darum geht, technische Inhalte
-          zu vermitteln. Diese Fähigkeit bringe ich auch in meinen Projekten als
-          Entwickler mit ein.
-        </p>
-        <p>
-          Neben meiner Lehrtätigkeit beschäftige ich mich auch privat mit der
-          Erweiterung meiner Fähigkeiten. Für mich ist das Coden nicht nur ein
-          Beruf, sondern eine Leidenschaft. Kreative Lösungen für verschiedene
-          Projekte zu finden und dabei stets neue Techniken und Ansätze zu
-          entdecken, fasiziert mich.
-        </p>
-        <p>
-          Privat beschäftige ich mich gerade mit der Unreal Engine in Verbindung
-          mit einem NodeJS Backend. Die Kommunikation über WebSockets aktuell
-          noch via JSON, später dann binär via UDP.
-        </p>
+        <h2 class="aboutHeader">About</h2>
+        <article class="aboutText">
+          <p>
+            Hi, mein Name ist Martin, ich bin
+            <span class="ageContainer"></span> Jahre alt und ein
+            leidenschaftlicher Webentwickler. Derzeit arbeite ich als Junior
+            Teacher am Digital Career Institute in Hamburg. In meiner Rolle
+            bringe ich meinen Studenten die Grundlagen der
+            Fullstack-Webentwicklung bei, insbesondere im MERN-Stack mit
+            Javascript und TypeScript. Diese Tätigkeit hat mir nicht nur
+            technisches Wissen vermittelt, sondern auch meine Fähigkeit
+            gestärkt, komplexe Themen verständlich und präzise zu vermitteln.
+          </p>
+          <p>
+            Meine Erfahrung als Lehrer hat mir gezeigt, wie wichtig klare
+            Kommunikation ist, insbesondere wenn es darum geht, technische
+            Inhalte zu vermitteln. Diese Fähigkeit bringe ich auch in meinen
+            Projekten als Entwickler mit ein.
+          </p>
+          <p>
+            Neben meiner Lehrtätigkeit beschäftige ich mich auch privat mit der
+            Erweiterung meiner Fähigkeiten. Für mich ist das Coden nicht nur ein
+            Beruf, sondern eine Leidenschaft. Kreative Lösungen für verschiedene
+            Projekte zu finden und dabei stets neue Techniken und Ansätze zu
+            entdecken, fasiziert mich.
+          </p>
+          <p>
+            Privat beschäftige ich mich gerade mit der Unreal Engine in
+            Verbindung mit einem NodeJS Backend. Die Kommunikation über
+            WebSockets aktuell noch via JSON, später dann binär via UDP.
+          </p>
+        </article>
+        <article>
+          <a
+            href="https://www.mongodb.com/resources/languages/mern-stack"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><span>MERN-Stack</span></a
+          >
+          <a href="/pdf/CV_Krüss.pdf" target="_blank" rel="download cv"
+            ><span>Lebenslauf (<i class="fa-solid fa-download"></i>)</span>
+          </a>
+          <a href="https://github.com/MartinKruess/" target="_blank"
+            ><span>GitHub</span></a
+          >
+          <a
+            href="https://www.linkedin.com/in/martin-kr%C3%BCss-a5199621b/"
+            target="_blank"
+            ><span>LinkedIn</span></a
+          >
+          <a href="mailto:martinkr90@googlemail.com"><span>E-Mail</span></a>
+        </article>
       </section>
       <section id="skills">
         <h2>Skills</h2>
@@ -147,7 +147,7 @@
         </form>
       </section>
     </main>
-    <footer>
+    <footer id="lvup">
       <h2>Selflearning Materials</h2>
       <p>
         Du möchtest dich selbst weiterbilden und in den bereich Web Development

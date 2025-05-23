@@ -1,3 +1,11 @@
+/* 
+Infos
+  Mobileversion:
+    - min-width: 350px (perfect)
+  Media 600-750px
+  Media 750-900px
+*/
+
 :root {
   /* Dark */
   --overlaysDark: #292f3d;
@@ -29,6 +37,7 @@ body {
   top: 0;
   right: 0;
   left: 1rem;
+  z-index: 1;
 }
 
 nav {
@@ -97,7 +106,6 @@ section {
 
 fieldset {
   background: #1c1f21;
-  /* width: 20rem; */
   display: flex;
   flex-direction: column;
   margin: auto;
