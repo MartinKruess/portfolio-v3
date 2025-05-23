@@ -171,7 +171,6 @@ fieldset {
     outline: 0.2rem solid var(--overlaysLight);
   }
 
-  /* From Uiverse.io by Navarog21 */
   button {
     width: 10em;
     position: relative;

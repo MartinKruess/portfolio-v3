@@ -1,4 +1,4 @@
-#about a {
+.linkBtn {
   background: #efca0e;
   color: var(--overlaysLight);
   text-decoration: none;
@@ -13,10 +13,10 @@
   }
 }
 
-#about a span::before,
-#about a span::after,
-#about a::before,
-#about a::after {
+.linkbtn span::before,
+.linkbtn span::after,
+.linkbtn::before,
+.linkbtn::after {
   background: transparent;
   content: "";
   width: 0.4rem;
@@ -26,61 +26,61 @@
   opacity: 0;
 }
 
-#about a span::before {
+.linkBtn span::before {
   left: 0;
   top: 0;
   border-top: 2px solid var(--overlaysLight);
   border-left: 2px solid var(--overlaysLight);
 }
 
-#about a span::after {
+.linkBtn span::after {
   right: 0;
   bottom: 0;
   border-right: 2px solid var(--overlaysLight);
   border-bottom: 2px solid var(--overlaysLight);
 }
 
-#about a::before {
+.linkBtn::before {
   right: 0;
   top: 0;
   border-right: 2px solid var(--overlaysLight);
   border-top: 2px solid var(--overlaysLight);
 }
 
-#about a::after {
+.linkBtn::after {
   left: 0;
   bottom: 0;
   border-left: 2px solid var(--overlaysLight);
   border-bottom: 2px solid var(--overlaysLight);
 }
 
-#about a:hover {
+.linkBtn:hover {
   color: var(--overlaysLight);
 }
 
-#about a span:hover::before,
-#about a span:hover::after,
-#about a:hover::before,
-#about a:hover::after {
+.linkBtn span:hover::before,
+.linkBtn span:hover::after,
+.linkBtn:hover::before,
+.linkBtn:hover::after {
   opacity: 1;
 }
 
-#about a:hover::before {
+.linkBtn:hover::before {
   right: 5px;
   top: 5px;
 }
 
-#about a:hover::after {
+.linkBtn:hover::after {
   left: 5px;
   bottom: 5px;
 }
 
-#about a:hover span::before {
+.linkBtn:hover span::before {
   left: 5px;
   top: 5px;
 }
 
-#about a:hover span::after {
+.linkBtn:hover span::after {
   right: 5px;
   bottom: 5px;
 }
